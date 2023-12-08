@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ERROR - 2023-12-03 12:30:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in D:\Kuliah\PKL\CAPI\madzab-capi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
 Stack trace:
 #0 D:\Kuliah\PKL\CAPI\madzab-capi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SHOW TABLES FRO...', 0)
@@ -778,6 +779,111 @@ Stack trace:
 #4 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE "e...')
 #5 C:\laragon\www\madzab-capi\app\Database\Migrations\2023-12-03-054830_CreateErrorTable.php(34): CodeIgniter\Database\Forge->createTable('error')
 #6 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(869): App\Database\Migrations\CreateErrorTable->up()
+=======
+ERROR - 2023-12-03 15:47:13 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:170
+Stack trace:
+#0 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(170): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1361): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1380): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(760): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(918): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 C:\xampp\htdocs\madzab-capi\madzab-capi\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1361): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1380): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(760): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#10 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(918): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#11 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#12 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\madzab-capi\madzab-capi\spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+ERROR - 2023-12-03 15:50:19 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1361): CodeIgniter\Database\BaseConnection->query('SELECT "table_n...')
+#3 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1380): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(760): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#10 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(918): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#11 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#12 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\madzab-capi\madzab-capi\spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+ERROR - 2023-12-03 15:51:18 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1361): CodeIgniter\Database\BaseConnection->query('SELECT "table_n...')
+#3 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1380): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(760): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#10 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(918): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#11 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#12 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\madzab-capi\madzab-capi\spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+ERROR - 2023-12-03 16:47:06 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1361): CodeIgniter\Database\BaseConnection->query('SELECT "table_n...')
+#3 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1380): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(760): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#10 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(918): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#11 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#12 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\madzab-capi\madzab-capi\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\madzab-capi\madzab-capi\spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+ERROR - 2023-12-03 17:00:18 --> ErrorException: pg_query(): Query failed: ERROR:  type modifier is not allowed for type "integer"
+LINE 2:  "id_tim" SERIAL(11) NOT NULL,
+                  ^ in C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 140)
+#1 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(140): pg_query(Object(PgSql\Connection), 'CREATE TABLE "t...')
+#2 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('CREATE TABLE "t...')
+#3 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE "t...')
+#4 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE "t...')
+#5 C:\laragon\www\madzab-capi\app\Database\Migrations\2023-12-03-072522_CreateTimPencacahTable.php(31): CodeIgniter\Database\Forge->createTable('timpencacah')
+#6 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(869): App\Database\Migrations\CreateTimPencacahTable->up()
+>>>>>>> Stashed changes
 #7 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
 #8 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
 #9 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
@@ -789,6 +895,7 @@ Stack trace:
 #15 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
 #16 C:\laragon\www\madzab-capi\spark(98): CodeIgniter\CLI\Console->run()
 #17 {main}
+<<<<<<< Updated upstream
 ERROR - 2023-12-03 19:27:43 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type timestamp: "current_timestamp()"
 LINE 10:  "timestamp" timestamp DEFAULT 'current_timestamp()' NOT NUL...
                                         ^ in C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:140
@@ -800,6 +907,17 @@ Stack trace:
 #4 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE "n...')
 #5 C:\laragon\www\madzab-capi\app\Database\Migrations\2023-12-03-055808_CreateNotifTable.php(54): CodeIgniter\Database\Forge->createTable('notif')
 #6 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(869): App\Database\Migrations\CreateNotifTable->up()
+=======
+ERROR - 2023-12-03 17:03:35 --> ErrorException: pg_query(): Query failed: ERROR:  relation "token" does not exist in C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 140)
+#1 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(140): pg_query(Object(PgSql\Connection), 'CREATE TABLE "t...')
+#2 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('CREATE TABLE "t...')
+#3 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE "t...')
+#4 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE "t...')
+#5 C:\laragon\www\madzab-capi\app\Database\Migrations\2023-12-03-074057_CreateTokenAmbilSampleTable.php(36): CodeIgniter\Database\Forge->createTable('token_ambil_sam...')
+#6 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(869): App\Database\Migrations\CreateTokenAmbilSampelTable->up()
+>>>>>>> Stashed changes
 #7 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
 #8 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
 #9 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
@@ -811,3 +929,267 @@ Stack trace:
 #15 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
 #16 C:\laragon\www\madzab-capi\spark(98): CodeIgniter\CLI\Console->run()
 #17 {main}
+<<<<<<< Updated upstream
+=======
+ERROR - 2023-12-03 17:05:40 --> ErrorException: pg_query(): Query failed: ERROR:  relation "token" does not exist in C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 140)
+#1 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(140): pg_query(Object(PgSql\Connection), 'CREATE TABLE "t...')
+#2 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('CREATE TABLE "t...')
+#3 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE "t...')
+#4 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE "t...')
+#5 C:\laragon\www\madzab-capi\app\Database\Migrations\2023-12-03-074057_CreateTokenAmbilSampleTable.php(36): CodeIgniter\Database\Forge->createTable('token_ambil_sam...')
+#6 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(869): App\Database\Migrations\CreateTokenAmbilSampelTable->up()
+#7 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#8 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#9 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#12 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(918): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#13 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#14 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#16 C:\laragon\www\madzab-capi\spark(98): CodeIgniter\CLI\Console->run()
+#17 {main}
+ERROR - 2023-12-03 18:40:33 --> ErrorException: pg_query(): Query failed: ERROR:  relation "mahasiswa" does not exist
+LINE 1: INSERT INTO "mahasiswa" ("alamat", "id_tim", "nama", "nim", ...
+                    ^ in C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 140)
+#1 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(140): pg_query(Object(PgSql\Connection), 'INSERT INTO "ma...')
+#2 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ma...')
+#3 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ma...')
+#4 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1778): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ma...', NULL, false)
+#5 C:\laragon\www\madzab-capi\app\Database\Seeds\MahasiswaSeeder.php(34): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\MahasiswaSeeder->run()
+#7 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(918): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 C:\laragon\www\madzab-capi\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 2023-12-03 18:40:52 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'pkl62_sikoko', 3306, '', 0)
+#1 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Migration.php(49): CodeIgniter\Database\Config::forge('sikoko')
+#5 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(838): CodeIgniter\Database\Migration->__construct()
+#6 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(918): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 C:\laragon\www\madzab-capi\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Migration.php(49): CodeIgniter\Database\Config::forge('sikoko')
+#4 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(838): CodeIgniter\Database\Migration->__construct()
+#5 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#6 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#10 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(918): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#11 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#12 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 C:\laragon\www\madzab-capi\spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+ERROR - 2023-12-03 18:41:44 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  database "pkl63_sikoko" does not exist in C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\laragon\\www\\...', 69)
+#1 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(69): pg_connect('host=localhost ...')
+#2 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\Postgre\Connection))
+#5 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Migration.php(49): CodeIgniter\Database\Config::forge('sikoko')
+#6 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(838): CodeIgniter\Database\Migration->__construct()
+#7 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#8 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#9 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#12 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(918): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#13 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#14 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#16 C:\laragon\www\madzab-capi\spark(98): CodeIgniter\CLI\Console->run()
+#17 {main}
+ERROR - 2023-12-03 18:44:43 --> ErrorException: pg_query(): Query failed: ERROR:  relation "mahasiswa" does not exist
+LINE 1: INSERT INTO "mahasiswa" ("alamat", "id_tim", "nama", "nim", ...
+                    ^ in C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 140)
+#1 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(140): pg_query(Object(PgSql\Connection), 'INSERT INTO "ma...')
+#2 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ma...')
+#3 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ma...')
+#4 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1778): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ma...', NULL, false)
+#5 C:\laragon\www\madzab-capi\app\Database\Seeds\MahasiswaSeeder.php(34): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\MahasiswaSeeder->run()
+#7 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(918): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 C:\laragon\www\madzab-capi\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 2023-12-03 18:46:22 --> ErrorException: pg_query(): Query failed: ERROR:  relation "mahasiswa" does not exist
+LINE 1: INSERT INTO "mahasiswa" ("alamat", "id_tim", "nama", "nim", ...
+                    ^ in C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 140)
+#1 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(140): pg_query(Object(PgSql\Connection), 'INSERT INTO "ma...')
+#2 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ma...')
+#3 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ma...')
+#4 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1778): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ma...', NULL, false)
+#5 C:\laragon\www\madzab-capi\app\Database\Seeds\MahasiswaSeeder.php(33): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\MahasiswaSeeder->run()
+#7 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(918): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 C:\laragon\www\madzab-capi\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+CRITICAL - 2023-12-03 18:47:25 --> App\Models\MahasiswaModel::getMahasiswa(): Return value must be of type App\Libraries\Mahasiswa, null returned
+in APPPATH\Models\MahasiswaModel.php on line 25.
+ 1 APPPATH\Controllers\Login.php(24): App\Models\MahasiswaModel->getMahasiswa('111910986')
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-03 18:48:45 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'pkl62_wilayah_s...', 3306, '', 0)
+#1 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\madzab-capi\app\Models\WilayahKerjaModelSby.php(143): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\madzab-capi\app\Models\MahasiswaModel.php(48): App\Models\WilayahKerjaModelSby->getAllWilayahKerja('123456789')
+#8 C:\laragon\www\madzab-capi\app\Controllers\Login.php(24): App\Models\MahasiswaModel->getMahasiswa('123456789')
+#9 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Login->index()
+#10 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#11 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\madzab-capi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\madzab-capi\app\Models\WilayahKerjaModelSby.php(143): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\madzab-capi\app\Models\MahasiswaModel.php(48): App\Models\WilayahKerjaModelSby->getAllWilayahKerja('123456789')
+#7 C:\laragon\www\madzab-capi\app\Controllers\Login.php(24): App\Models\MahasiswaModel->getMahasiswa('123456789')
+#8 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Login->index()
+#9 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\madzab-capi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-12-03 18:48:45 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `bloksensus`
+WHERE `nim` = :nim:', [...], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\WilayahKerjaModelSby.php(143): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Models\MahasiswaModel.php(48): App\Models\WilayahKerjaModelSby->getAllWilayahKerja('123456789')
+ 7 APPPATH\Controllers\Login.php(24): App\Models\MahasiswaModel->getMahasiswa('123456789')
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-03 18:50:31 --> wilayahSby is not a valid database connection group.
+in SYSTEMPATH\Database\Config.php on line 70.
+ 1 SYSTEMPATH\Model.php(154): CodeIgniter\Database\Config::connect('wilayahSby')
+ 2 APPPATH\Models\MahasiswaModel.php(44): CodeIgniter\Model->__construct()
+ 3 APPPATH\Controllers\Login.php(24): App\Models\MahasiswaModel->getMahasiswa('123456789')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-03 18:52:48 --> Undefined array key "email"
+in APPPATH\Models\MahasiswaModel.php on line 72.
+ 1 APPPATH\Models\MahasiswaModel.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Models\\MahasiswaModel.php', 72)
+ 2 APPPATH\Controllers\Login.php(24): App\Models\MahasiswaModel->getMahasiswa('123456789')
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-03 18:53:42 --> Attempt to assign property "email" on array
+in APPPATH\Models\MahasiswaModel.php on line 27.
+ 1 APPPATH\Controllers\Login.php(24): App\Models\MahasiswaModel->getMahasiswa('123456789')
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-03 18:53:52 --> Attempt to assign property "email" on null
+in APPPATH\Models\MahasiswaModel.php on line 27.
+ 1 APPPATH\Controllers\Login.php(24): App\Models\MahasiswaModel->getMahasiswa('123456789')
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-03 18:54:10 --> Undefined array key "foto"
+in APPPATH\Models\MahasiswaModel.php on line 75.
+ 1 APPPATH\Models\MahasiswaModel.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto"', 'APPPATH\\Models\\MahasiswaModel.php', 75)
+ 2 APPPATH\Controllers\Login.php(24): App\Models\MahasiswaModel->getMahasiswa('123456789')
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-03 18:54:21 --> Trying to access array offset on value of type null
+in APPPATH\Models\TimModel.php on line 22.
+ 1 APPPATH\Models\TimModel.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Models\\TimModel.php', 22)
+ 2 APPPATH\Controllers\Login.php(32): App\Models\TimModel->getTim('1')
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-03 18:54:41 --> Undefined property: App\Libraries\Mahasiswa::$id_tim
+in APPPATH\Controllers\Login.php on line 32.
+ 1 APPPATH\Controllers\Login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Libraries\\Mahasiswa::$id_tim', 'APPPATH\\Controllers\\Login.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+>>>>>>> Stashed changes
