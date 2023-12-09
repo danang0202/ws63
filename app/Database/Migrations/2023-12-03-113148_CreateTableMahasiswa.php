@@ -14,6 +14,10 @@ class CreateTableMahasiswa extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => '9',
             ],
+            'email' => [
+                'type' => 'VARCHAR',
+                'constraint' => '50',
+            ],
             'nama' => [
                 'type' => 'VARCHAR',
                 'constraint' => '255',
@@ -23,8 +27,11 @@ class CreateTableMahasiswa extends Migration
                 'constraint' => '16',
             ],
             'alamat' => [
+                'type' => 'TEXT',
+            ],
+            'foto' => [
                 'type' => 'VARCHAR',
-                'constraint' => '50',
+                'constraint' => '255',
             ],
             'plain_password' => [
                 'type' => 'VARCHAR',
