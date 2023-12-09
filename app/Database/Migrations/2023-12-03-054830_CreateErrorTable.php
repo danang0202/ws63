@@ -13,8 +13,6 @@ class CreateErrorTable extends Migration
             'unique_id_instance' => [
                 'type' => 'VARCHAR',
                 'constraint' => 255,
-                'unsigned' => true,
-                'auto_increment' => true
             ],
             'xpath' => [
                 'type' => 'VARCHAR',

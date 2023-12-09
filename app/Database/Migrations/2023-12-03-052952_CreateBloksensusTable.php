@@ -12,8 +12,6 @@ class CreateBloksensusTable extends Migration
         $this->forge->addField([
             'id' => [
                 'type'           => 'VARCHAR',
-                'unsigned'       => true,
-                'auto_increment' => true,
             ],
             'kabupaten' => [
                 'type'       => 'VARCHAR',

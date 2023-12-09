@@ -1,0 +1,71 @@
+ERROR - 2023-12-09 16:03:29 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(174): mysqli->real_connect()
+#1 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists()
+#6 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /var/www/madzab-capi/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /var/www/madzab-capi/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /var/www/madzab-capi/spark(98): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#4 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists()
+#5 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#7 /var/www/madzab-capi/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#8 /var/www/madzab-capi/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#9 /var/www/madzab-capi/spark(98): CodeIgniter\CLI\Console->run()
+#10 {main}
+CRITICAL - 2023-12-09 16:03:29 --> Call to a member function getStatusCode() on null
+in ROOTPATH/spark on line 100.
+
+ERROR - 2023-12-09 16:04:13 --> ErrorException: pg_query(): Query failed: ERROR:  type modifier is not allowed for type "integer"
+LINE 2:  "unique_id_instance" SERIAL(255) NOT NULL,
+                              ^ in /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(147): pg_query()
+#2 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/madzab-capi/app/Database/Migrations/2023-12-03-054830_CreateErrorTable.php(34): CodeIgniter\Database\Forge->createTable()
+#6 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\CreateErrorTable->up()
+#7 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#8 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#9 /var/www/madzab-capi/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#10 /var/www/madzab-capi/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#11 /var/www/madzab-capi/spark(98): CodeIgniter\CLI\Console->run()
+#12 {main}
+CRITICAL - 2023-12-09 16:04:13 --> Call to a member function getStatusCode() on null
+in ROOTPATH/spark on line 100.
+
+ERROR - 2023-12-09 16:06:20 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type timestamp: "current_timestamp()"
+LINE 10:  "timestamp" timestamp DEFAULT 'current_timestamp()' NOT NUL...
+                                        ^ in /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(147): pg_query()
+#2 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/madzab-capi/app/Database/Migrations/2023-12-03-055808_CreateNotifTable.php(54): CodeIgniter\Database\Forge->createTable()
+#6 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\CreateNotifTable->up()
+#7 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#8 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#9 /var/www/madzab-capi/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#10 /var/www/madzab-capi/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#11 /var/www/madzab-capi/spark(98): CodeIgniter\CLI\Console->run()
+#12 {main}
+CRITICAL - 2023-12-09 16:06:20 --> Call to a member function getStatusCode() on null
+in ROOTPATH/spark on line 100.
+

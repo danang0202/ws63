@@ -1,0 +1,2 @@
+CRITICAL - 2023-12-08 13:32:53 --> Call to a member function initialize() on null
+#0 {main}
