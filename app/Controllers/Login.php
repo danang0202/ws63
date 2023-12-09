@@ -25,7 +25,9 @@ class Login extends ResourceController
         $mahasiswa = $mahasiswaModel->getMahasiswa($this->request->getGet('nim'));
         if (!$mahasiswa)
             return $this->failNotFound('NIM tidak ditemukan');
-        if (password_hash($this->request->getGet('password'),PASSWORD_BCRYPT) != $mahasiswa->password)
+        // if (password_hash($this->request->getGet('password'),PASSWORD_BCRYPT) != $mahasiswa->password)
+        //     return $this->fail('Password Salah');
+        if (!password_verify($this->request->getGet('password'), mahasiswa->password))
             return $this->fail('Password Salah');
 
 

@@ -35,7 +35,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'postgres',
         'password' => 'Lampu123',
-        'database' => 'pkl63_wilayah',
+        'database' => 'pkl63',
         'DBDriver' => 'Postgre',
         'DBPrefix' => '',
         'pConnect' => false,
@@ -73,7 +73,7 @@ class Database extends Config
     public $sikoko = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => 'postgre',
+        'username' => 'postgres',
         'password' => 'Lampu123',
         'database' => 'pkl63_sikoko',
         'DBDriver' => 'Postgre',
@@ -93,7 +93,7 @@ class Database extends Config
     public $lokasi = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => 'postgre',
+        'username' => 'postgres',
         'password' => 'Lampu123',
         'database' => 'pkl63_monitoring',
         'DBDriver' => 'Postgre',

@@ -6,7 +6,7 @@ use CodeIgniter\Database\Migration;
 
 class CreateUserTable extends Migration
 {
-    protected $DBGroup = 'wilayah';
+    protected $DBGroup = 'lokasi';
     public function up()
     {
         $this->forge->addField([

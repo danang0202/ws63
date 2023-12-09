@@ -11,21 +11,25 @@ class MahasiswaSeeder extends Seeder
     {
         $data = [
             [
-                'nim' => '123456789',
+                'nim' => '222112218',
                 'nama' => 'Mahasiswa 1',
                 'no_hp' => '08123456789',
+                'email' => '222112218@stis.ac.id',
+                'foto' => '2l32iueiueieuwieuwieuwieuwe',
                 'alamat' => 'Alamat Mahasiswa 1',
                 'plain_password' => 'password1',
-                'password' => password_hash('password1',PASSWORD_BCRYPT), // Gunakan hashing untuk password
+                'password' => password_hash('password1',PASSWORD_DEFAULT), // Gunakan hashing untuk password
                 'id_tim' => 1, // Gantilah dengan id tim yang sesuai
             ],
             [
-                'nim' => '987654321',
+                'nim' => '222112219',
                 'nama' => 'Mahasiswa 2',
                 'no_hp' => '08234567890',
+                'email' => '222112219@stis.ac.id',
+                'foto' => '2l32iueiueieuwieuwieuwieuwe',
                 'alamat' => 'Alamat Mahasiswa 2',
                 'plain_password' => 'password2',
-                'password' => password_hash('password2', PASSWORD_BCRYPT),
+                'password' => password_hash('password2', PASSWORD_DEFAULT),
                 'id_tim' => 2, // Gantilah dengan id tim yang sesuai
             ],
         ];
