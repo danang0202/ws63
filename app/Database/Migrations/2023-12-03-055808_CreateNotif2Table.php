@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class CreateNotifTable extends Migration
+class CreateNotif2Table extends Migration
 {
     protected $DBGroup = 'pkl63';
     public function up()
@@ -47,7 +47,7 @@ class CreateNotifTable extends Migration
             'timestamp' => [
                 'type' => 'timestamp',
                 // 'default' => 'current_timestamp()'
-                
+
             ]
         ]);
 
