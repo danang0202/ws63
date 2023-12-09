@@ -15,23 +15,23 @@ class CreateUserTable extends Migration
             ],
             'nama' => [
                 'type' => 'varchar',
-                'constraint' => 255,
+                'constraint' => '255',
             ],
             'email' => [
                 'type' => 'varchar',
-                'constraint' => 255,
+                'constraint' => '255',
             ],
             'jenis' => [
                 'type' => 'varchar',
-                'constraint' => 255,
+                'constraint' => '255',
             ],
             'jabatan' => [
                 'type' => 'varchar',
-                'constraint' => 255,
+                'constraint' => '255',
             ],
             'password' => [
                 'type' => 'varchar',
-                'constraint' => 255,
+                'constraint' => '255',
             ],
         ]);
 

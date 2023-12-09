@@ -18,11 +18,11 @@ class CreateLimeKendalaTable extends Migration
             ],
             'id_pertanyaan' => [
                 'type' => 'VARCHAR',
-                'constraint' => 255
+                'constraint' => '255'
             ],
             'kendala' => [
                 'type' => 'VARCHAR',
-                'constraint' => 255
+                'constraint' => '255'
             ]
         ]);
 

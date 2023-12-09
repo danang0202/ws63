@@ -16,11 +16,11 @@ class Users extends Migration
             ],
             'email' => [
                 'type' => "VARCHAR",
-                'constraint' => 100
+                'constraint' => '100'
             ],
             'password' => [
                 'type' => "VARCHAR",
-                'constraint' => 200
+                'constraint' => '200'
             ]
         ]);
         $this->forge->addKey('id', true);

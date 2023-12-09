@@ -11,21 +11,16 @@ class CreateKecamatanTable extends Migration
     public function up()
     {
         $this->forge->addField([
-            'kabno' => [
-                'type'           => 'VARCHAR',
-                'constraint'     => '2',
+            'id_kec' => [
+                'type'       => 'INT',
+                'constraint' => 3,
             ],
-            'kecno' => [
-                'type'       => 'VARCHAR',
-                'constraint' => '3',
-            ],
-            'nama' => [
+            'nama_kec' => [
                 'type' => 'VARCHAR',
-                'constraint' => '50',
+                'constraint' => '255',
             ],
         ]);
-        $this->forge->addKey('kabno', true);
-        $this->forge->addKey('kecno', true);
+        $this->forge->addKey('id_kec', true);
         $this->forge->createTable('kecamatan');
     }
 

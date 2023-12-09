@@ -22,7 +22,7 @@ class CreateTokenAmbilSampelTable extends Migration
             ],
             'lokus' => [
                 'type' => 'VARCHAR',
-                'constraint' => 16,
+                'constraint' => '16',
                 'null' => true,
             ],
             'count' => [

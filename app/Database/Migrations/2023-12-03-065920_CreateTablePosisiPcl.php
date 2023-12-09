@@ -12,27 +12,27 @@ class CreateTablePosisiPcl extends Migration
         $this->forge->addField([
             'nim' => [
                 'type' => 'VARCHAR',
-                'constraint' => 9,
+                'constraint' => '9',
                 'null' => false,
             ],
             'nama' => [
                 'type' => 'VARCHAR',
-                'constraint' => 50,
+                'constraint' => '50',
                 'null' => true,
             ],
             'no_hp' => [
                 'type' => 'VARCHAR',
-                'constraint' => 16,
+                'constraint' => '16',
                 'null' => true,
             ],
             'id_tim' => [
                 'type' => 'INT',
-                'constraint' => 11,
+                'constraint' => '11',
                 'null' => false,
             ],
             'lokus' => [
                 'type' => 'VARCHAR',
-                'constraint' => 256,
+                'constraint' => '256',
                 'null' => true,
             ],
             'latitude' => [

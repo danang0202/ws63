@@ -1,19 +1,62 @@
-ERROR - 2023-12-09 16:03:29 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:174
+CRITICAL - 2023-12-09 15:08:46 --> sikoko is not a valid database connection group.
+in SYSTEMPATH\Database\Config.php on line 70.
+ 1 SYSTEMPATH\Model.php(154): CodeIgniter\Database\Config::connect('sikoko')
+ 2 APPPATH\Controllers\Login.php(19): CodeIgniter\Model->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-09 15:11:07 --> sikoko is not a valid database connection group.
+in SYSTEMPATH\Database\Config.php on line 70.
+ 1 SYSTEMPATH\Model.php(154): CodeIgniter\Database\Config::connect('sikoko')
+ 2 APPPATH\Controllers\Login.php(19): CodeIgniter\Model->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-09 15:11:11 --> sikoko is not a valid database connection group.
+in SYSTEMPATH\Database\Config.php on line 70.
+ 1 SYSTEMPATH\Model.php(154): CodeIgniter\Database\Config::connect('sikoko')
+ 2 APPPATH\Controllers\Login.php(19): CodeIgniter\Model->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-09 15:12:00 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:69
 Stack trace:
-#0 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(174): mysqli->real_connect()
-#1 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
-#2 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
-#3 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query()
-#4 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
-#5 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists()
-#6 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
-#7 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
-#8 /var/www/madzab-capi/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
-#9 /var/www/madzab-capi/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
-#10 /var/www/madzab-capi/spark(98): CodeIgniter\CLI\Console->run()
-#11 {main}
-
-Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+#0 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#3 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\BaseModel.php(525): CodeIgniter\Model->doFind(true, '123456789')
+#5 C:\laragon\www\madzab-capi\app\Models\MahasiswaModel.php(23): CodeIgniter\BaseModel->find('123456789')
+#6 C:\laragon\www\madzab-capi\app\Controllers\Login.php(24): App\Models\MahasiswaModel->getMahasiswa('123456789')
+#7 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Login->index()
+#8 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\madzab-capi\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-12-09 15:12:00 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "mahasiswa"
+WHERE "mahasiswa"."nim" = :mahasiswa.nim:', [...], false)
+ 3 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(525): CodeIgniter\Model->doFind(true, '123456789')
+ 5 APPPATH\Models\MahasiswaModel.php(23): CodeIgniter\BaseModel->find('123456789')
+ 6 APPPATH\Controllers\Login.php(24): App\Models\MahasiswaModel->getMahasiswa('123456789')
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-12-09 15:12:01 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\Postgre\pg_connect() in C:\laragon\www\madzab-capi\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:69
 Stack trace:
 #0 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
 #1 /var/www/madzab-capi/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
