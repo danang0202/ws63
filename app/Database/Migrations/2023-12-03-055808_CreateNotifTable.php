@@ -46,7 +46,8 @@ class CreateNotifTable extends Migration
             ],
             'timestamp' => [
                 'type' => 'timestamp',
-                'default' => 'current_timestamp()'
+                // 'default' => 'current_timestamp()'
+                
             ]
         ]);
 
