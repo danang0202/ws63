@@ -19,51 +19,53 @@ class CreateBloksensusTable extends Migration
             ],
             'kecamatan' => [
                 'type' => 'VARCHAR',
-                'constraint' => '5',
+                'constraint' => '255',
             ],
-            'kelurahandesa' => [
-                'type' => 'VARCHAR',
-                'constraint' => '5',
-            ],
-            'nama' => [
-                'type' => 'VARCHAR',
-                'constraint' => '4',
-            ],
-            'sertifikasi' => [
-                'type' => 'VARCHAR',
-                'default' => '1',
-                // 'constraint' => 'stratifikasi_domain CHECK (value IN ("1","2"))',
-            ],
-            'jumlah_rt' => [
-                'type' => 'VARCHAR',
-                'constraint' => '4',
-            ],
-            'jumlah_rt_update' => [
-                'type' => 'VARCHAR',
-                'constraint' => '4',
-            ],
-            'sls' => [
-                'type' => 'VARCHAR',
-                'constraint' => '256',
-            ],
-            'nim' => [
-                'type' => 'VARCHAR',
-                'constraint' => '9',
-            ],
-            'beban_cacah' => [
+            'id_kab' => [
                 'type' => 'INT',
-                'constraint' => 11,
+                'constraint' => 3,
             ],
-            'status' => [
-                'type' => 'VARCHAR',
-                'constraint' => '50',
-            ],
-            'jumlah_rt_genz' => [
+            'id_kec' => [
                 'type' => 'INT',
-                'constraint' => 11,
+                'constraint' => 3,
+            ],
+            'id_desa' => [
+                'type' => 'INT',
+                'constraint' => 3,
+            ],
+            'jml_art' => [
+                'type' => 'INT',
+                'constraint' => 3,
+            ],
+            'jml_genz_dewasa' => [
+                'type' => 'INT',
+                'constraint' => 3,
+            ],
+            'jml_genz_anak' => [
+                'type' => 'INT',
+                'constraint' => 3,
+            ],
+            'nim_pencacah' => [
+                'type' => 'VARCHAR',
+                'constraint' => '10',
+            ],
+            'tgl_cacah' => [
+                'type' => 'DATE',
+            ],
+            'nim_pengawas' => [
+                'type' => 'VARCHAR',
+                'constraint' => '10',
+            ],
+            'tgl_periksa' => [
+                'type' => 'DATE',
+            ],
+            'catatan' => [
+                'type' => 'VARCHAR',
+                'constraint' => '255',
+                'null' => true,
             ],
         ]);
-        $this->forge->addKey('id', true);
+        $this->forge->addKey('no_bs', true);
         $this->forge->createTable('bloksensus');
     }
 

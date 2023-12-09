@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class CreateTablePosisiPcl extends Migration
+class CreateTablePosisiPcl2 extends Migration
 {
     protected $DBGroup = 'sikoko';
     public function up()
@@ -38,4 +38,3 @@ class CreateTablePosisiPcl extends Migration
         $this->forge->dropTable('posisipcl');
     }
 }
-

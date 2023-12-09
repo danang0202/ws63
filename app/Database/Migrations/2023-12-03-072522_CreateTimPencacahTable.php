@@ -16,11 +16,11 @@ class CreateTimPencacahTable extends Migration
             ],
             'nama_tim' => [
                 'type' => 'VARCHAR',
-                'constraint' => 50,
+                'constraint' => '50',
             ],
             'nim_koor' => [
                 'type' => 'VARCHAR',
-                'constraint' => 9,
+                'constraint' => '9',
                 'null' => true,
             ],
         ]);

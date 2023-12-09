@@ -32,7 +32,7 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index', ['filter' => 'auth']);
-$routes->post('login', 'Login::index');                     // login dengan parameter nim dan hash password 
+$routes->get('login', 'Login::index');                     // login dengan parameter nim dan hash password 
 $routes->get('gethashpw', 'GetHashPW::index');              // dapatkan hash password
 $routes->get('getextracontent', 'GetExtraContent::index');  // dapatkan wilayah kerja / anggota tim
 $routes->get('listing', 'Listing::create');                 // tidak terpakai di angaktan 62

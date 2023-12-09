@@ -12,19 +12,19 @@ class CreateErrorTable extends Migration
         $this->forge->addField([
             'unique_id_instance' => [
                 'type' => 'VARCHAR',
-                'constraint' => 255,
+                'constraint' => '255',
             ],
             'xpath' => [
                 'type' => 'VARCHAR',
-                'constraint' => 255
+                'constraint' => '255',
             ],
             'nxpath' => [
                 'type' => 'VARCHAR',
-                'constraint' => 255
+                'constraint' => '255',
             ],
             'form_id' => [
                 'type' => 'VARCHAR',
-                'constraint' => 255
+                'constraint' => '255',
             ]
         ]);
 

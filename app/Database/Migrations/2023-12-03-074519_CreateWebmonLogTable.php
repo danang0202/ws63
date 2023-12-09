@@ -12,12 +12,12 @@ class CreateWebmonLogTable extends Migration
         $this->forge->addField([
             'email' => [
                 'type' => 'varchar',
-                'constraint' => 255,
+                'constraint' => '255',
                 'null' => true,
             ],
             'waktu' => [
                 'type' => 'varchar',
-                'constraint' => 255,
+                'constraint' => '255',
                 'null' => true,
             ],
         ]);

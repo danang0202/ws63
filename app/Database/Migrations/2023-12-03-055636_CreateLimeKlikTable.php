@@ -18,11 +18,11 @@ class CreateLimeKlikTable extends Migration
             ],
             'id_pertanyaan' => [
                 'type' => 'VARCHAR',
-                'constraint' => 255
+                'constraint' => '255'
             ],
             'tipe' => [
                 'type' => 'VARCHAR',
-                'constraint' => 255
+                'constraint' => '255',
             ],
             'jumlah' => [
                 'type' => 'int',
