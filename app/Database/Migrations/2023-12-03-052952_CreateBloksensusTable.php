@@ -71,7 +71,7 @@ class CreateBloksensusTable extends Migration
             ],
             'nama_sls' => [
                 'type' => 'VARCHAR',
-                'constraint' => 255,
+                'constraint' => '255',
             ],
             'id_kab' => [
                 'type' => 'INT',
@@ -99,27 +99,25 @@ class CreateBloksensusTable extends Migration
             ],
             'nim_pencacah' => [
                 'type' => 'VARCHAR',
-                'constraint' => 10,
+                'constraint' => '10',
             ],
             'tgl_cacah' => [
                 'type' => 'DATE',
-                'default' => 'CURRENT_TIMESTAMP',
             ],
             'nim_pengawas' => [
                 'type' => 'VARCHAR',
-                'constraint' => 10,
+                'constraint' => '10',
             ],
             'tgl_periksa' => [
                 'type' => 'DATE',
-                'default' => 'CURRENT_TIMESTAMP',
             ],
             'catatan' => [
                 'type' => 'VARCHAR',
-                'constraint' => 255,
+                'constraint' => '255',
                 'null' => true,
             ],
         ]);
-        $this->forge->addKey('id', true);
+        $this->forge->addKey('no_bs', true);
         $this->forge->createTable('bloksensus');
     }
 

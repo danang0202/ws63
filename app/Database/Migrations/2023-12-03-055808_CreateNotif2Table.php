@@ -18,31 +18,31 @@ class CreateNotif2Table extends Migration
             ],
             'unique_id_instance' => [
                 'type' => 'VARCHAR',
-                'constraint' => 50
+                'constraint' => '50',
             ],
             'nim' => [
                 'type' => 'VARCHAR',
-                'constraint' => 9
+                'constraint' => '9',
             ],
             'kortim' => [
                 'type' => 'VARCHAR',
-                'constraint' => 9
+                'constraint' => '9',
             ],
             'status_isian' => [
                 'type' => 'VARCHAR',
-                'constraint' => 10
+                'constraint' => '10',
             ],
             'status' => [
                 'type' => 'VARCHAR',
-                'constraint' => 20
+                'constraint' => '20',
             ],
             'form_id' => [
                 'type' => 'VARCHAR',
-                'constraint' => 100
+                'constraint' => '100',
             ],
             'UploadName' => [
                 'type' => 'VARCHAR',
-                'constraint' => 150
+                'constraint' => '150',
             ],
             'timestamp' => [
                 'type' => 'timestamp',

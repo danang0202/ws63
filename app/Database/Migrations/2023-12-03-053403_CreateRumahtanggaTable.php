@@ -92,18 +92,18 @@ class CreateRumahtanggaTable extends Migration
             ],
             'nama_kep_rt' => [
                 'type' => 'VARCHAR',
-                'constraint' => 255,
+                'constraint' => '255',
             ],
             'alamat' => [
                 'type' => 'VARCHAR',
-                'constraint' => 255,
+                'constraint' => '255',
             ],
             'no_bs' => [
                 'type' => 'INT',
                 'constraint' => 4,
             ]
         ]);
-        $this->forge->addKey('kodeRuta', true);
+        $this->forge->addKey('no_segmen', true);
         $this->forge->createTable('rumahtangga');
     }
 

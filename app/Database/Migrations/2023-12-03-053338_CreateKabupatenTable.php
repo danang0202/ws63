@@ -20,7 +20,7 @@ class CreateKabupatenTable extends Migration
                 'constraint' => '255',
             ],
         ]);
-        $this->forge->addKey('kabno', true);
+        $this->forge->addKey('id_kab', true);
         $this->forge->createTable('kabupaten');
     }
 

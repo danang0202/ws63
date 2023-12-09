@@ -20,8 +20,7 @@ class CreateKecamatanTable extends Migration
                 'constraint' => '255',
             ],
         ]);
-        $this->forge->addKey('kabno', true);
-        $this->forge->addKey('kecno', true);
+        $this->forge->addKey('id_kec', true);
         $this->forge->createTable('kecamatan');
     }
 
